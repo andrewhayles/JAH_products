@@ -39,6 +39,16 @@
     font-family: 'Inter', sans-serif;
   }
   
+  /* --- Styles for text on the hero background image --- */
+  /* This ensures the hero text is always white */
+  .hero-section-text {
+    color: var(--textOnImage);
+	overflow-wrap: break-word;
+  }
+  a.group {
+  text-decoration: none;
+}
+
   
     /* --- Converted .prose Styles (Light Theme Only) --- */
   .prose { color: var(--onLight); max-width: 75ch; }
@@ -139,5 +149,17 @@
   </nav>
 </header>
 
-  <!-- Image: Natural Soap -->
-<img src="jahshop.webp" alt="Natural Soap">
+    <!-- === Main Content === -->
+    <main class="flex-grow">
+      
+      <!-- === Hero Section === -->
+      <!-- Built from index.md -->
+	  <div class="relative bg-complementary dark:bg-dark text-onComplementary dark:text-onDark" style="background-image: url('background.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="absolute inset-0 bg-complementary/75 dark:bg-dark/75"></div> <div class="relative container mx-auto px-4 py-36 md:py-48 text-center">
+         <h1 class="text-4xl md:text-6xl font-mono uppercase font-bold hero-section-text">JAH Shop</h1>
+			<p class="mt-4 text-xl md:text-2xl hero-section-text">
+            All my products are handmade by me, Jenny Hayles, a native-born Philippine citizen.  All the ingredients are sourced locally, they are fresh fruits and vegetables and local products only.  We make no guarantees other than if you do not like our products please contact us and we will provide a refund.  Feel free to comment how I can improve the products (send me an email or call me).
+          </p>
+        </div>
+      </div>
+
